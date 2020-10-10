@@ -1,12 +1,186 @@
-/* BASIC */
+/*Home Page Styling*/
+/*Home Page Styling*/
+/*Home Page Styling*/
 
-html {
-    background-color: #56baed;
+
+h2, h3 {
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+p {
+  line-height: 1.6em;
+}
+
+#navbar {
+  height: 50px;
+}
+
+#grad1 {
+  height: 600px;
+  background-color:lightcyan; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, lightcyan , rgba(0, 0, 255, 0.651));
+}
+
+#imageBanner {
+  font-size: 25px;
+}
+
+/*
+* -- Layout Styles --
+*/
+.l-content {
+  margin: 0 auto;
+}
+
+.l-box {
+  padding: 0.5em 2em;
+}
+
+/*
+* -- MENU STYLES --
+* Make the menu have a very faint box-shadow.
+*/
+.pure-menu {
+  box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
+}
+
+.pure-menu-link {
+  padding: .5em .7em;
+}
+
+
+/*
+* -- BANNER --
+* The top banner with the headings. By using a combination
+* of `display: table;` and `display: table-cell;`, we can
+* vertically center the text.
+*/
+
+.banner {
+  background: transparent url('http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg') 0 0 no-repeat fixed;
+  text-align: center;
+  background-size: cover;
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://24.media.tumblr.com/ccb268832580ac12951828a1c179de69/tumblr_mo2xbk8JUK1st5lhmo1_1280.jpg', sizingMethod='scale');
+
+  height: 200px;
+  width: 100%;
+  margin-bottom: 3em;
+  display: table;
+}
+
+  .banner-head {
+      display: table-cell;
+      vertical-align: middle;
+      margin-bottom: 0;
+      font-size: 2em;
+      color: white;
+      font-weight: 500;
+      text-shadow: 0 1px 1px black;
   }
+
+
+/*
+* -- PRICING TABLE HEADER --
+* By default, a header is black/white, and has some styles for its <h2> name.
+*/
+.pricing-table-header {
+  background: #4d77ca;
+  color: #fff;
+}
+.pricing-table-header h2 {
+  margin: 0;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+}
+
+
+/*
+* -- PRICING TABLE PRICE --
+* Styles for the price and the corresponding <span>per month</span>
+*/
+.pricing-table-price {
+  font-size: 6em;
+  margin: 0.2em 0 0;
+  font-weight: 100;
+}
+  .pricing-table-price span {
+      display: block;
+      text-transform: uppercase;
+      font-size: 0.2em;
+      padding-bottom: 2em;
+      font-weight: 400;
+      color: rgba(255, 255, 255, 0.5);
+      *color: #fff;
+  }
+
+.information-head {
+  color: black;
+  font-weight: 500;
+}
+
+.footer {
+  background: #111;
+  color: #888;
+  text-align: center;
+}
+  .footer a {
+      color: #ddd;
+  }
+
+
+
+/*
+* -- TABLET MEDIA QUERIES --
+* On tablets, we want to slightly adjust the size of the banner
+* text and add some vertical space between the various pricing tables
+*/
+@media(min-width: 767px) {
+
+  .banner-head {
+      font-size: 4em;
+  }
+  .pricing-table {
+      margin-bottom: 0;
+  }
+
+}
+
+/*
+* -- PHONE MEDIA QUERIES --
+* On phones, we want to reduce the height and font-size of the banner further
+*/
+@media (min-width: 480px) {
+  .banner {
+      height: 400px;
+  }
+  .banner-head {
+      font-size: 3em;
+  }
+}
+
+/*LogIn Page Styling*****************************/
+/*LogIn Page Styling*****************************/
+/*LogIn Page Styling*****************************/
+
+
+#grad1 {
+  height: 600px;
+  background-color:lightcyan; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, lightcyan , rgba(0, 0, 255, 0.651));
+}
+
+#navbar {
+  height: 50px;
+}
+
   
   body {
     font-family: "Poppins", sans-serif;
-    height: 100vh;
   }
   
   a {
@@ -256,4 +430,87 @@ html {
   #icon {
     width:60%;
   }
+
+
+
+/*Project Page Styling*****************************/
+/*Project Page Styling*****************************/
+/*Project Page Styling*****************************/
+
+#grad1 {
+  height: 600px;
+  background-color:lightcyan; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, lightcyan , rgba(0, 0, 255, 0.651));
+}
+
+#navbar {
+  height: 50px;
+}
+
+#projectHeader {
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+#allSlides {
+    margin-top: 50px;
+}
+
+#slide {
+    border: crimson;
+    border-style: double;
+}
+
+
+
+/*Task Page Styling*****************************/
+/*Task Page Styling*****************************/
+/*Task Page Styling*****************************/
+
+
+* {
+  box-sizing: border-box;
+} 
+
+#navbar {
+  height: 50px;
+}
+
+#grad1 {
+  height: 600px;
+  background-color:lightcyan; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, lightcyan , blue);
+}
+
+#projectBox {
+  margin-left: 25px;
+  margin-right: 25px;
+  border-radius: 25px;
+}
+
+#projectTitle {
+  font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+}
+
+#headers {
+  font-size: 20px;
+}
+
+#taskrow {
+  width: 100%;
+  padding-bottom: 3px;
+}
+
+select.option {
+  background-color: aqua;
+}
+
+#addTaskBtn {
+  background-color: rgba(0, 0, 255, 0.5);
+  border-radius: 25px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
   

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Projects List Page</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
+        <link rel="stylesheet" href="style.css"/>
+        <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/css/uikit.min.css" />
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.8/dist/js/uikit-icons.min.js"></script>
+
+    </head>
+
+  <body>
+
+    <div>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+        <a class="navbar-brand" href="#">Mindful Logo</a>
+        <button type="submit" id="projectBtn">Add New Project</button>
+    </nav>
+</div>
+
+    <div id="grad1">
+    <!--Styleing from Ulkit-->
+    <div>
+        <p id="projectHeader">Current Projects:</p>
+    </div>
+    <div class="container" id ="projectContainer">
+
+    
+        <div uk-slider="center: true">
+
+            <div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" id="allSlides">
+        
+                <ul class="uk-slider-items uk-child-width-1-2@s uk-grid">
+                    <li>
+                        <div class="uk-card uk-card-default" id="slide">
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Address Standardization</h3>
+                                <p>Integrate with USPS so users are not able to enter invalid mailing addresses.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default" id="slide">
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Project Halloween</h3>
+                                <p>Design and create a team halloween costume.The company theme is boardgames.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default" id="slide">
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Project Eat</h3>
+                                <p>Design and create an app for counting saturated fat. Be sure to include images</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default" id="slide">
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Project Give Back</h3>
+                                <p>Create a platform that allows employees to volunteer their time during the work day.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="uk-card uk-card-default" id="slide">
+                            <div class="uk-card-body">
+                                <h3 class="uk-card-title">Project Unkown</h3>
+                                <p>Come up with more project ideas for the calss demonstration.You know there are a million ones.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+        
+                <a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+                <a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+        
+            </div>
+        
+            <ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+        
+        </div>
+    </div>
+</div>
+
+  
+    <script src="script.js"></script>
+  </body>
+</html>
