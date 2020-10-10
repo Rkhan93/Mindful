@@ -1,3 +1,20 @@
+//HTML elements to edit the DOM: buttons
+var homePageEl = document.getElementById("homePage");
+var loginPageEl = document.getElementById("loginPage");
+var projectPageEl = document.getElementById("projectPage");
+var taskPageEl = document.getElementById("taskPage");
+
+var loginBtn = document.getElementById("loginBtn");
+
+function showLogin () {
+    homePageEl.style.display = "block";
+    loginPageEl.style.display = "flex";
+}
+
+
+loginBtn.addEventListener("click", showLogin);
+
+
 // Dependencies
 // ====================================================
 var express = require("express");
