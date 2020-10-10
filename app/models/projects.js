@@ -10,7 +10,9 @@ var Project = sequelize.define("project", {
 })
 
 // Sync with database
-Project.sync();
+Project.sync(); 
+
+
 
 // Export
 module.exports = Project;
