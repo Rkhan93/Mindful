@@ -4,10 +4,11 @@
 
 // Dependencies
 var Sequelize = require("sequelize");
+var dotenv = require('dotenv').config()
 
 // Creates mySQL connection using Sequelize, the empty string in the third argument spot is our password.
-var sequelize = new Sequelize("mindful", "root", "password", {
-  host: "localhost",
+var sequelize = new Sequelize("mindful", process.env.DB_USER, process.env.DB_PASS, {
+  host: process.env.DB_HOST,
   port: 3306,
   dialect: "mysql",
   pool: {
