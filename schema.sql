@@ -1,2 +1,4 @@
 DROP DATABASE IF EXISTS mindful;
 CREATE DATABASE mindful;
+DROP DATABASE IF EXISTS mindful_users;
+CREATE DATABASE mindful_users;
