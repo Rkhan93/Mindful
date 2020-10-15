@@ -8,7 +8,6 @@ var exphbs = require("express-handlebars");
 <<<<<<< HEAD
 // Data
 
-
 // Sets up the Express app to handle data parsing
 =======
 // Requiring passport as we've configured it
