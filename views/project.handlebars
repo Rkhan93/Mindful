@@ -14,10 +14,10 @@
                     <li>
                         <div class="uk-card uk-card-default" id="slide">
                             <div class="uk-card-body">
-                                HI THERE
-                                {{!-- {{#each projectName}}
-                                <h3 class="uk-card-title">{{projectName}}</h3>
-                                <p>{{projectDes}}</p> --}}
+                                {{#each projects}}
+                                <h3 class="uk-card-title">{{dataValues.projectName}}</h3>
+                                <p>{{dataValues.projectDescription}}</p>
+                                {{/each}}
                             </div>
                         </div>
                     </li>

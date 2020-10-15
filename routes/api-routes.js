@@ -30,6 +30,20 @@ module.exports = function(app) {
       });
   });
 
+
+  app.post("/api/projects", (req, res) => {
+    db.Project.create({
+      projectName: req.body.projectName,
+      projectDescription: req.body.projectDescription
+    })
+      .then((dbProject) => {
+        res.json(dbProject);
+      })
+      .catch(err => {
+        res.status(401).json(err);
+      });
+  });
+
   // Route for logging user out
   app.get("/logout", (req, res) => {
     req.logout();
