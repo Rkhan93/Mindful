@@ -1,10 +1,62 @@
-<h1>Mindful</h1>
-<p>Create a new task or click on the current task</p>
+<div class="card project" id="projectBox">
 
-<p>{{taskName}}</p>
-<p>{{taskOwner}}</p>
-<p>{{taskEmail}}</p>
-<p>{{taskDate}}</p>
-<p>{{taskStatus}}</p>
+        <div class="card-header" id="projectTitle">
+          {{projectName}}
+        </div>
 
-<button>{{newTask}}</button>
+        <div class="card-body">
+
+            <form>  
+                <div class="form-row" id="headers">
+                    <div class="col-2 hDescription">Task Name</div>
+                    <div class="col-2 hOwner">Owner</div>
+                    <div class="col-2 hDueDate">Due Date</div>
+                    <div class="col-2 hCreating">Creating</div>
+                    <div class="col-2 hTesting">Testing</div>
+                    <div class="col-2 hCompletion">Completion</div>
+                </div>
+
+                <div class="form-row" id="taskrow">
+                    <div class="col-2 userDescription">
+                        <input type="text" class="form-control" {{taskDes}}>
+                    </div>
+
+                    <div class="col-2 userOwner">
+                        <input type="text" class="form-control" {{taskOwner}}>
+                    </div>
+
+                    <div class="col-2 userDueDate">
+                        <input type="date" class="form-control" {{taskDueDate}}>
+                    </div>
+
+                    <div class="col-2 userCreating">
+                        <select name="currentCreating" class="form-control" id="currentCreating">
+                            <option value="status">Status</option>
+                            <option id="notStarted" value="notStarted">Not Started</option>
+                            <option id="twntyfive" value="25">25%</option>
+                            <option value="50">50%</option>
+                            <option value="75">75%</option>
+                            <option value="completed">Completed</option>
+                            <option value="stuck">Stuck</option>
+                        </select>
+                    </div>
+
+                    <div class="col-2 userTesting">
+                        <select name="currentTesting" class="form-control" id="currentTesting">
+                            <option value="status">Status</option>
+                            <option value="notStarted" id="notStarted">Not Started</option>
+                            <option value="25" id="twntyfive">25%</option>
+                            <option value="50">50%</option>
+                            <option value="75">75%</option>
+                            <option value="completed">Completed</option>
+                            <option value="stuck">Stuck</option>
+                        </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+        <br>
+        <button type="button" id="addTaskBtn">Add Another Task</button>
+
+    </div>
