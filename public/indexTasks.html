@@ -6,84 +6,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet"  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link rel="stylesheet" href="./assets/style.css"/>
-  </head>
+</head>
 
-  <body>
+<body>
+
+
+    <!--Navigation bar to hold logo and button when needed-->
     <nav class="navbar navbar-expand-lg" id="navbar">
         <a class="navbar-brand" href="#">Mindful Logo</a>
+        <button type="submit" id="taskBtn">Add Another Task</button>
     </nav>
-    
+
+    <!--div to hold the gradient backgroud after the nav bar-->
     <div id="grad1">
     
-    <div class="card project" id="projectBox">
+        <div class="card project" id="projectBox">
+        <!--div to hold a project box that can contain multiple task lines-->
 
-        <div class="card-header" id="projectTitle">
-          Project Title Will Go Here
-        </div>
+<!--**************Need to remove place holder text. Should pull from user input***********************-->    
+            
+            <div class="card-header" id="projectTitle">Project Title Will Go Here</div>
 
-        <div class="card-body">
-
-            <form>  
-                <div class="form-row" id="headers">
-                    <div class="col-2 hDescription">Task Name</div>
-                    <div class="col-2 hOwner">Owner</div>
-                    <div class="col-2 hDueDate">Due Date</div>
-                    <div class="col-2 hCreating">Creating</div>
-                    <div class="col-2 hTesting">Testing</div>
-                    <div class="col-2 hCompletion">Completion</div>
-                </div>
-
-                <div class="form-row" id="taskrow">
-                    <div class="col-2 userDescription">
-                        <input type="text" class="form-control">
+                <div class="card-body">
+                <!--div to hold form rows including header line-->    
+            
+                <form> <!--Header line-->
+                    <div class="form-row" id="headers">
+                        <div class="col-2 hDescription">Task Name</div>
+                        <div class="col-2 hOwner">Owner</div>
+                        <div class="col-2 hDueDate">Due Date</div>
+                        <div class="col-2 hCreating">Creating</div>
+                        <div class="col-2 hTesting">Testing</div>
+                        <div class="col-2 hCompletion">Completion</div>
                     </div>
+                    <!--New taskrow should be created with then user selects add task-->    
+                    <div class="form-row" id="taskrow">
+                        <div class="col-2 userDescription">
+                            <input type="text" class="form-control">
+                        </div>
 
-                    <div class="col-2 userOwner">
-                        <input type="text" class="form-control">
-                    </div>
+                        <div class="col-2 userOwner">
+                            <input type="text" class="form-control">
+                        </div>
 
-                    <div class="col-2 userDueDate">
-                        <input type="date" class="form-control">
-                    </div>
+                        <div class="col-2 userDueDate">
+                            <input type="date" class="form-control">
+                        </div>
 
-                    <div class="col-2 userCreating">
-                        <select name="currentCreating" class="form-control" id="currentCreating">
+                        <div class="col-2 userCreating">
+                            <select name="currentCreating" class="form-control" id="currentCreating">
+                                <option value="status">Status</option>
+                                <option class="orange">Not Started</option>
+                                <option id="twntyfive" value="25">25%</option>
+                                <option value="50">50%</option>
+                                <option value="75">75%</option>
+                                <option value="completed">Completed</option>
+                                <option value="stuck">Stuck</option>
+                            </select>
+                        </div>
+
+                        <div class="col-2 userTesting">
+                            <select name="currentTesting" class="form-control" id="currentTesting">
+                                <option value="status">Status</option>
+                                <option class="orange">Not Started</option>
+                                <option value="25" id="twntyfive">25%</option>
+                                <option value="50">50%</option>
+                                <option value="75">75%</option>
+                                <option value="completed">Completed</option>
+                                <option value="stuck">Stuck</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-2 userCompletion">
+                            <select name="currentCompletion" class="form-control" id="currentCompletion">
                             <option value="status">Status</option>
-                            <option id="notStarted" value="notStarted">Not Started</option>
-                            <option id="twntyfive" value="25">25%</option>
-                            <option value="50">50%</option>
-                            <option value="75">75%</option>
-                            <option value="completed">Completed</option>
-                            <option value="stuck">Stuck</option>
-                        </select>
-                    </div>
-
-                    <div class="col-2 userTesting">
-                        <select name="currentTesting" class="form-control" id="currentTesting">
-                            <option value="status">Status</option>
-                            <option value="notStarted" id="notStarted">Not Started</option>
+                            <option class="orange">Not Started</option>
                             <option value="25" id="twntyfive">25%</option>
                             <option value="50">50%</option>
                             <option value="75">75%</option>
                             <option value="completed">Completed</option>
                             <option value="stuck">Stuck</option>
-                        </select>
-                    </div>
-                    
-                    <div class="col-2 userCompletion">
-                        <select name="currentCompletion" class="form-control" id="currentCompletion">
-                        <option value="status">Status</option>
-                        <option value="notStarted" id="notStarted">Not Started</option>
-                        <option value="25" id="twntyfive">25%</option>
-                        <option value="50">50%</option>
-                        <option value="75">75%</option>
-                        <option value="completed">Completed</option>
-                        <option value="stuck">Stuck</option>
-                        </select>
-                    </div>
-                </div>
-            </form>
-        </div>
+                            </select>
+                        </div>
+                    </div> <!--div to end task row-->
+                </form>
+                </div> <!--div to end the card body-->
 
             <form>  
                 <div class="form-row" id="taskrow">
@@ -132,21 +139,18 @@
                         <option value="75">75%</option>
                         <option value="completed">Completed</option>
                         <option value="stuck">Stuck</option>
-                        </select>
                     </div>
-                </div>    
+                </div> <!--div to end task row-->
             </form>
-        
-        </div>
-        
- 
-        <br>
-        <button type="button" id="addTaskBtn">Add Another Task</button>
+            </div> <!--div to end the card body-->
 
-    </div>
-      </div>
+    </div> <!--div to end card box including project name-->  
+    </div> <!--div to close project box-->
 
-    </div>
-    <script src="script.js"></script>
+    </div> <!--div to close grad1 background-->
+
+    
+
+<script src="script.js"></script>
   </body>
 </html>

@@ -31,6 +31,13 @@ app.set("view engine", "handlebars");
 require("./routes/html-routes.js")(app);
 require("./routes/api-routes.js")(app);
 
+<<<<<<< HEAD
+// Start server
+// ====================================================
+app.listen(PORT, function() {
+    console.log("App listening on port " + PORT)
+})
+=======
 // Syncing our database and logging a message to the user upon success
 db.sequelize.sync().then(() => {
   app.listen(PORT, () => {
@@ -41,3 +48,4 @@ db.sequelize.sync().then(() => {
     );
   });
 });
+>>>>>>> 618bb78d04d3c91efb232f26f89c2136fb14a8f5
