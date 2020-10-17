@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <!--got this from https://bootsnipp.com/snippets/dldxB-->
-<title>LogIn Page</title>
+<title>New Project Page</title>
 <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -11,40 +11,29 @@
 </head>
 
 <body>
-<div class="container" id="loginPage">
+<div class="container" id="newProjectPage">
 
 <nav class="navbar navbar-expand-lg" id="navbar">
-  <a class="navbar-brand" href="#">Mindful Logo</a>
+  <a class="navbar-brand" href="#">Mindful</a>
 </nav>
   
 <div id="grad1">
   
 <div class="wrapper fadeInDown">
   <div id="formContent">
-    <!-- Tabs Titles -->
-
-    <!-- Icon -->
-    <div class="fadeIn first">
-      <img src="http://danielzawadzki.com/codepen/01/icon.svg" id="icon" alt="User Icon" />
-    </div>
 
     <!-- Login Form -->
-    <form>
-      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
-      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
-      <input type="submit" class="fadeIn fourth" value="Log In">
+    <form class="project">
+      <input type="text" id="projectName" class="fadeIn second" name="project" placeholder="Enter Project Name">
+      <input type="text" id="ProjectDescription" class="fadeIn third" name="project" placeholder="Enter Project Description">
+      <input type="submit" class="fadeIn fourth" value="Create Project">
     </form>
-
-    <!-- Remind Passowrd -->
-    <div id="formFooter">
-      <a class="underlineHover" href="#">Forgot Password?</a>
-    </div>
 
   </div>
 </div>
 </div>
 </div> <!--close loginPage-->
 
-<script src="script.js"></script>
+<script type="text/javascript" src="js/projects.js"></script>
 </body>
 </html>

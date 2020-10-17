@@ -1,10 +1,11 @@
-<div class="" id="projectPage">
+<div class="container" id="projectPage">
     <nav class="navbar navbar-expand-lg" id="navbar">
     <a class="navbar-brand" href="#">Mindful Logo</a>
-    <a class="btn" href="/newTask.html" id="projectBtn">Add New Task</a>
+    <button type="submit" id="taskBtn">Add Another Task</button>
     </nav>
     <div id="grad1">
     <div class="card project" id="projectBox">
+    {{#each tasks}}
     <div class="card-body">
         <form>  
             <div class="form-row" id="headers">
@@ -13,7 +14,7 @@
                 <div class="col-2 hCreating">Creating</div>
                 <div class="col-2 hTesting">Testing</div>
             </div>
-            {{#each tasks}}
+
             <div class="form-row" id="taskrow">
                 <div class="col-2 userDescription">
                     <input type="text" class="form-control" value="{{dataValues.taskName}}">

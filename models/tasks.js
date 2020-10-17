@@ -4,7 +4,7 @@ module.exports = function(sequelize, DataTypes) {
       taskName: {
         type: DataTypes.STRING,
         allowNull: false,
-        unique: true
+        unique: false
       },
       taskOwner: {
         type: DataTypes.STRING,
@@ -12,13 +12,21 @@ module.exports = function(sequelize, DataTypes) {
       },
       creatingStatus: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
       },
       testingStatus: {
         type: DataTypes.STRING,
-        allowNull: false
+        allowNull: true
       },
     });
+
+    Tasks.associate = function(models) {
+      Tasks.belongsTo(models.Project, {
+        foreignKey: {
+          allowNull: false
+        }
+      })
+    }
     return Tasks;
   };
   
